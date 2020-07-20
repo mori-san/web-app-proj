@@ -1,0 +1,32 @@
+.Footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #ebebeb;
+  padding: 20px 0;
+  margin-top: 5px;
+  cursor: default;
+}
+
+.Footer-left {
+  width: 20%;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+.Footer-center {
+  width: 60%;
+  font-family: "Poppins", sans-serif;
+  color: #929292;
+  font-size: 15px;
+  letter-spacing: 0.025em;
+}
+
+.Footer-right {
+  width: 20%;
+}
