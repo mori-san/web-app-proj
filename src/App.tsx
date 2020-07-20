@@ -1,26 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
+import { observer } from "mobx-react";
+import store from "./store";
+import * as ROUTES from "./Route";
+import "./App.css";
+import Header from "./header/Header";
+// import StaticState from "./StaticState";
+import Homepage from "./content/homepage/Homepage";
+import Aboutme from "./content/aboutme/Aboutme";
+import Footer from "./footer/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//=======================================================
+// Main app.
+//=======================================================
+@observer
+class App extends Component<any> {
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <React.Fragment>
+            <Header />
+            <Switch>
+              <Route
+                exact
+                path={ROUTES.LANDING}
+                render={() => <Redirect to={ROUTES.HOMEPAGE} />}
+              />
+              <Route
+                path={ROUTES.HOMEPAGE}
+                render={() => <Homepage state={store.homepageState} />}
+              />
+              <Route
+                path={ROUTES.ABOUTME}
+                render={() => <Aboutme state={store.aboutmeState} />}
+              />
+            </Switch>
+            <Footer />
+          </React.Fragment>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
