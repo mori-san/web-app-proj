@@ -21,6 +21,9 @@ class Header extends Component<RouteComponentProps> {
           <Nav.Item>
             <Nav.Link href="/aboutme">About Me</Nav.Link>
           </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/sample">Sample</Nav.Link>
+          </Nav.Item>
         </Nav>
       </div>
     );
