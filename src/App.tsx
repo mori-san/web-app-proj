@@ -10,9 +10,9 @@ import store from "./store";
 import * as ROUTES from "./Route";
 import "./App.css";
 import Header from "./header/Header";
-// import StaticState from "./StaticState";
 import Homepage from "./content/homepage/Homepage";
 import Aboutme from "./content/aboutme/Aboutme";
+import Sample from "./content/sample/Sample";
 import Footer from "./footer/Footer";
 
 //=======================================================
@@ -39,6 +39,10 @@ class App extends Component<any> {
               <Route
                 path={ROUTES.ABOUTME}
                 render={() => <Aboutme state={store.aboutmeState} />}
+              />
+              <Route
+                path={ROUTES.SAMPLE}
+                render={() => <Sample state={store.sampleState} />}
               />
             </Switch>
             <Footer />
