@@ -1,6 +1,11 @@
 .Homepage {
   height: 100%;
-  margin: 0 100px;
+  width: 100%;
+}
+
+.Homepage-box {
+  width: 70%;
+  display: inline-block;
 }
 
 .Homepage-title {
@@ -8,16 +13,6 @@
   font-size: 20px;
   font-style: italic;
   letter-spacing: 0.125em;
-  margin: 100px 0;
+  padding: 100px 0;
   cursor: default;
-}
-
-.card-img-top {
-  width: 50px !important;
-  height: auto !important;
-  margin: 20px auto 0 auto !important;
-}
-
-.Homepage-backtotop {
-  margin: 30px 0 !important;
 }

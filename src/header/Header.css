@@ -1,14 +1,19 @@
 .Header {
   height: 100%;
+  width: 100%;
   border-bottom: 1px solid #ebebeb;
-  margin: 35px 0 25px 0;
 }
 
-.Header-logo {
-  margin-bottom: 25px;
+.Header-box {
+  width: 70%;
+  display: inline-block;
+}
+
+.Header-text-logo {
   font-family: "Roboto";
   font-size: 25px;
   font-weight: 600;
   letter-spacing: 0.025em;
+  padding: 35px 0 25px 0;
   cursor: default;
 }

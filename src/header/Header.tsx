@@ -12,19 +12,21 @@ class Header extends Component<RouteComponentProps> {
   render() {
     return (
       <div className="Header">
-        <div className="Header-logo">morisan</div>
+        <div className="Header-box">
+          <div className="Header-text-logo">morisan</div>
 
-        <Nav className="justify-content-center" activeKey="/homepage">
-          <Nav.Item>
-            <Nav.Link href="/homepage">Home</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="/aboutme">About Me</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="/sample">Sample</Nav.Link>
-          </Nav.Item>
-        </Nav>
+          <Nav className="justify-content-center" activeKey="/homepage">
+            <Nav.Item>
+              <Nav.Link href="/homepage">Home</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/aboutme">About Me</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/sample">Sample</Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </div>
       </div>
     );
   }

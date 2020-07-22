@@ -11,9 +11,13 @@ class Footer extends Component<RouteComponentProps> {
   render() {
     return (
       <div className="Footer">
-        <div className="Footer-left">morisan</div>
-        <div className="Footer-center">Thanks for visiting! Stay safe! :)</div>
-        <div className="Footer-right"></div>
+        <div className="Footer-box">
+          <div className="Footer-left">morisan</div>
+          <div className="Footer-center">
+            Thanks for visiting! Stay safe! :)
+          </div>
+          <div className="Footer-right"></div>
+        </div>
       </div>
     );
   }
