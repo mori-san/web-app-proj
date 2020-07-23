@@ -17,3 +17,26 @@
   padding: 35px 0 25px 0;
   cursor: default;
 }
+
+.Header-links-box {
+  justify-content: center !important;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.Header-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #007bff;
+  text-decoration: none !important;
+  background-color: transparent;
+}
+
+.Header-link-selected {
+  color: #4573e7;
+  font-weight: bold;
+  cursor: default;
+}

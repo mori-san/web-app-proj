@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { observer } from "mobx-react";
-import { withRouter, RouteComponentProps } from "react-router";
+import { NavLink, withRouter, RouteComponentProps } from "react-router-dom";
+import * as ROUTES from "../Route";
 import "./Header.css";
-import Nav from "react-bootstrap/Nav";
 
 //=======================================================
 // The header.
@@ -15,17 +15,32 @@ class Header extends Component<RouteComponentProps> {
         <div className="Header-box">
           <div className="Header-text-logo">morisan</div>
 
-          <Nav className="justify-content-center" activeKey="/homepage">
-            <Nav.Item>
-              <Nav.Link href="/homepage">Home</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="/aboutme">About Me</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="/sample">Sample</Nav.Link>
-            </Nav.Item>
-          </Nav>
+          <div className="Header-links-box">
+            <NavLink
+              exact
+              className="Header-link"
+              activeClassName="Header-link-selected"
+              to={ROUTES.HOMEPAGE}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              exact
+              className="Header-link"
+              activeClassName="Header-link-selected"
+              to={ROUTES.ABOUTME}
+            >
+              About Me
+            </NavLink>
+            <NavLink
+              exact
+              className="Header-link"
+              activeClassName="Header-link-selected"
+              to={ROUTES.SAMPLE}
+            >
+              Sample
+            </NavLink>
+          </div>
         </div>
       </div>
     );
