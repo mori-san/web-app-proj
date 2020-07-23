@@ -22,7 +22,7 @@ import Footer from "./footer/Footer";
 class App extends Component<any> {
   render() {
     return (
-      <Router>
+      <Router basename="/web-app-proj">
         <div className="App">
           <React.Fragment>
             <Header />
@@ -44,6 +44,7 @@ class App extends Component<any> {
                 path={ROUTES.SAMPLE}
                 render={() => <Sample state={store.sampleState} />}
               />
+              <Route render={() => <Redirect to={ROUTES.HOMEPAGE} />} />
             </Switch>
             <Footer />
           </React.Fragment>
