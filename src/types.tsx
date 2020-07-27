@@ -1,4 +1,24 @@
 //=======================================================
+// Currency conversion data.
+//=======================================================
+export type CurrencyConversion = {
+  fromAmount: number;
+  fromCurrency: string;
+  toAmount: number;
+  toCurrency: string;
+};
+
+//=======================================================
+// Default of currency conversion.
+//=======================================================
+export const CURRENCYCONVERSION_DEFAULT: CurrencyConversion = {
+  fromAmount: 0,
+  fromCurrency: "",
+  toAmount: 0,
+  toCurrency: "",
+};
+
+//=======================================================
 // Weather forecast data.
 //=======================================================
 export type WeatherForecast = {
