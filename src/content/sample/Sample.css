@@ -1,4 +1,18 @@
 .Sample {
   height: 100%;
-  margin: 0 200px;
+  width: 100%;
+}
+
+.Sample-box {
+  width: 70%;
+  display: inline-block;
+}
+
+.Sample-title {
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 550;
+  letter-spacing: 0.125em;
+  padding-top: 50px;
+  cursor: default;
 }
